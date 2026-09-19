@@ -71,7 +71,7 @@ public class CollectionUtils {
         final List<ContentItem> relatedStreams = collectRelatedItems(info.getRelatedItems());
 
         final List<MetaInfo> metaInfo = new ObjectArrayList<>();
-        info.getMetaInfo().forEach(metaInfoItem -> metaInfo.add(new MetaInfo(metaInfoItem.getTitle(), metaInfoItem.content().getContent(),
+        info.getMetaInfo().forEach(metaInfoItem -> metaInfo.add(new MetaInfo(metaInfoItem.getTitle(), metaInfoItem.getContent().content(),
                 metaInfoItem.getUrls(), metaInfoItem.getUrlTexts()
         )));
 
